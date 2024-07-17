@@ -1,0 +1,28 @@
+PS C:\Users\user\Desktop\git_challenge> ls
+
+
+    ディレクトリ: C:\Users\user\Desktop\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/07/17     22:51              0 hello_world.txt
+
+PS C:\Users\user\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\user\Desktop\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 04a4e0d] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\user\Desktop\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\user\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\user\Desktop\git_challenge> git commit -m "日本語訳を追記"
+[main b4fd6a0] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\user\Desktop\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\user\Desktop\git_challenge> git log --oneline
+b4fd6a0 (HEAD -> main) 日本語訳を追記
+04a4e0d hello_world.txtを追加
